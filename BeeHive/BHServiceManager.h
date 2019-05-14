@@ -26,5 +26,13 @@
 
 - (id)getServiceInstanceFromServiceName:(NSString *)serviceName;
 - (void)removeServiceWithServiceName:(NSString *)serviceName;
+#pragma mark - # edit to publick
 
+/**
+ 根据协议获取类名
+ 协议中可能有类方法
+ @param service service Protocol
+ @return Class
+ */
+- (Class)serviceImplClass:(Protocol *)service;
 @end
